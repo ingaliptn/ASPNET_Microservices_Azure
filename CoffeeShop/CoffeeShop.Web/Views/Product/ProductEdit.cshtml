@@ -1,0 +1,83 @@
+﻿@model ProductDto
+@{
+    ViewData["Title"] = "Зміна продукту";
+}
+
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-white">Зміна продукту</h1>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form asp-action="ProductEdit" enctype="multipart/form-data">
+            <input asp-for="ProductId" hidden />
+            <div class="row">
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-2">
+                            <label class="control-label pt-2 text-dark" style="font-size:20px;">Назва</label>
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-2">
+                            <label class="control-label pt-2 text-dark" style="font-size:20px;">Категорія</label>
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="CategoryName" class="form-control" />
+                            <span asp-validation-for="CategoryName" class="text-danger"></span>
+                        </div>
+                        <div class="col-2">
+                            <label class="control-label pt-2 text-dark" style="font-size:20px;">Опис</label>
+                        </div>
+                        <div class="col-10 pb-3">
+                            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-2">
+                            <label class="control-label pt-2 text-dark" style="font-size:20px;">Ціна</label>
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <div class="col-2">
+                            <label class="control-label pt-2 text-dark" style="font-size:20px;">Url картинки</label>
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="Image" class="form-control" />
+                            <input asp-for="ImageUrl" hidden class="form-control" />
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-5 offset-2">
+
+                            <a asp-action="ProductIndex" class="btn-primary btn form-control ">Повернутися до списку</a>
+                        </div>
+                        <div class="col-5">
+                            <input type="submit" value="Оновити" class="btn btn-info form-control" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <img src="@Model.ImageUrl" class="w-100" alt="@Model.Name" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

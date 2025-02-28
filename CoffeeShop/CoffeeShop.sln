@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34414.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{1DA4E021-8103-47CE-A194-8AA9B2B7F901}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{BD09B8EB-CBA9-4972-9BB9-4C6B36D32730}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{FA1E4477-1C68-4065-956A-D134914A2665}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BE175A89-57FB-4F2C-B0AB-43D22616BFAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.CouponAPI", "CoffeeShop.Services.CouponAPI\CoffeeShop.Services.CouponAPI.csproj", "{11F9A72F-D92D-4E6B-BCAE-E9F5293893B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Web", "CoffeeShop.Web\CoffeeShop.Web.csproj", "{64ED84E8-F142-4198-8F3C-B7856BD3FB33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.AuthAPI", "CoffeeShop.Services.AuthAPI\CoffeeShop.Services.AuthAPI.csproj", "{2E730794-3E9D-4438-9CAB-A12A10CC01BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.ProductAPI", "CoffeeShop.Services.ProductAPI\CoffeeShop.Services.ProductAPI.csproj", "{A48A0731-3A80-438C-A979-0EA33106F670}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.ShoppingCartAPI", "CoffeeShop.Services.ShoppingCartAPI\CoffeeShop.Services.ShoppingCartAPI.csproj", "{675361B6-44AB-4614-8FD3-2FDABFAEAFAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.MessageBus", "CoffeeShop.MessageBus\CoffeeShop.MessageBus.csproj", "{64C3A7EB-AE62-40AE-A29A-2818EC14CD3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.EmailAPI", "CoffeShop.Services.EmailAPI\CoffeeShop.Services.EmailAPI.csproj", "{65FA5088-B835-433E-89F4-CDCC298E3B3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.OrderAPI", "CoffeeShop.Services.OrderAPI\CoffeeShop.Services.OrderAPI.csproj", "{47629803-777B-487F-A586-30239500B379}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Services.RewardAPI", "CoffeeShop.Services.RewardAPI\CoffeeShop.Services.RewardAPI.csproj", "{7DA84FC3-DAE3-4F40-B65D-E15525292399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.GatewaySolution", "CoffeeShop.GatewaySolution\CoffeeShop.GatewaySolution.csproj", "{BC11162A-9C82-4B7A-BC6E-2209B5B5069B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F9A72F-D92D-4E6B-BCAE-E9F5293893B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F9A72F-D92D-4E6B-BCAE-E9F5293893B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F9A72F-D92D-4E6B-BCAE-E9F5293893B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F9A72F-D92D-4E6B-BCAE-E9F5293893B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64ED84E8-F142-4198-8F3C-B7856BD3FB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64ED84E8-F142-4198-8F3C-B7856BD3FB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64ED84E8-F142-4198-8F3C-B7856BD3FB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64ED84E8-F142-4198-8F3C-B7856BD3FB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E730794-3E9D-4438-9CAB-A12A10CC01BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E730794-3E9D-4438-9CAB-A12A10CC01BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E730794-3E9D-4438-9CAB-A12A10CC01BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E730794-3E9D-4438-9CAB-A12A10CC01BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48A0731-3A80-438C-A979-0EA33106F670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48A0731-3A80-438C-A979-0EA33106F670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48A0731-3A80-438C-A979-0EA33106F670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48A0731-3A80-438C-A979-0EA33106F670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{675361B6-44AB-4614-8FD3-2FDABFAEAFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675361B6-44AB-4614-8FD3-2FDABFAEAFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675361B6-44AB-4614-8FD3-2FDABFAEAFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675361B6-44AB-4614-8FD3-2FDABFAEAFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C3A7EB-AE62-40AE-A29A-2818EC14CD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C3A7EB-AE62-40AE-A29A-2818EC14CD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C3A7EB-AE62-40AE-A29A-2818EC14CD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C3A7EB-AE62-40AE-A29A-2818EC14CD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FA5088-B835-433E-89F4-CDCC298E3B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FA5088-B835-433E-89F4-CDCC298E3B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FA5088-B835-433E-89F4-CDCC298E3B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FA5088-B835-433E-89F4-CDCC298E3B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47629803-777B-487F-A586-30239500B379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47629803-777B-487F-A586-30239500B379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47629803-777B-487F-A586-30239500B379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47629803-777B-487F-A586-30239500B379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DA84FC3-DAE3-4F40-B65D-E15525292399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA84FC3-DAE3-4F40-B65D-E15525292399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA84FC3-DAE3-4F40-B65D-E15525292399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DA84FC3-DAE3-4F40-B65D-E15525292399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC11162A-9C82-4B7A-BC6E-2209B5B5069B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC11162A-9C82-4B7A-BC6E-2209B5B5069B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC11162A-9C82-4B7A-BC6E-2209B5B5069B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC11162A-9C82-4B7A-BC6E-2209B5B5069B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{11F9A72F-D92D-4E6B-BCAE-E9F5293893B0} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{64ED84E8-F142-4198-8F3C-B7856BD3FB33} = {1DA4E021-8103-47CE-A194-8AA9B2B7F901}
+		{2E730794-3E9D-4438-9CAB-A12A10CC01BE} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{A48A0731-3A80-438C-A979-0EA33106F670} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{675361B6-44AB-4614-8FD3-2FDABFAEAFAD} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{64C3A7EB-AE62-40AE-A29A-2818EC14CD3C} = {FA1E4477-1C68-4065-956A-D134914A2665}
+		{65FA5088-B835-433E-89F4-CDCC298E3B3A} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{47629803-777B-487F-A586-30239500B379} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{7DA84FC3-DAE3-4F40-B65D-E15525292399} = {BE175A89-57FB-4F2C-B0AB-43D22616BFAE}
+		{BC11162A-9C82-4B7A-BC6E-2209B5B5069B} = {BD09B8EB-CBA9-4972-9BB9-4C6B36D32730}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39147116-E6D4-4DF7-BD86-6C505BE6943C}
+	EndGlobalSection
+EndGlobal

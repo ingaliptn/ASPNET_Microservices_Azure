@@ -1,0 +1,41 @@
+﻿@model LoginRequestDto
+@{
+    ViewData["Title"] = "Авторизація";
+}
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-white">Авторизація</h1>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post">
+            
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 pb-2">
+                    <input asp-for="UserName" class="form-control" placeholder="Username..." />
+                    <span asp-validation-for="UserName" class="text-danger" />
+                </div>
+                <div class="col-12 col-md-6 offset-md-3 pb-2">
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Пароль..." />
+                    <span asp-validation-for="Password" class="text-danger" />
+                </div>
+                <div class="col-12 col-md-6 offset-md-3 pb-2">
+                    <button type="submit" class="form-control btn btn-success" value="Submit">Авторизуватися</button>
+                </div>
+                <div class="col-12 col-md-6 offset-md-3 pb-2">
+                    <a type="button" asp-action="Register" class="form-control btn btn-warning" value="Register">Нема аккаунту?</a>
+                </div>
+            </div>
+           
+
+        </form>
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} 
