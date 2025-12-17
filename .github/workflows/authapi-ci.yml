@@ -1,0 +1,42 @@
+name: AuthAPI CI - Build and Push to ACR
+
+on:
+  push:
+    paths:
+      - "CoffeeShop/**"
+      - ".github/workflows/authapi-ci.yml"
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure CLI - Login to ACR
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az acr login --name ${{ secrets.ACR_NAME }}
+
+      - name: Build AuthAPI image
+        run: |
+          cd CoffeeShop
+          docker build -t coffeeshop-authapi:dev .
+
+      - name: Tag image for ACR
+        run: |
+          docker tag coffeeshop-authapi:dev \
+            ${{ secrets.ACR_LOGIN_SERVER }}/coffeeshop-authapi:dev
+
+      - name: Push image to ACR
+        run: |
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/coffeeshop-authapi:dev
